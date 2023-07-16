@@ -25,7 +25,7 @@ def display():
         for x in range(n):
             if [y,x] in snake:
                 if [y,x] == snake[-1]: print('🟦', end = '')
-                elif [y,x] == snake[0]: print('🟧', end = '')
+                elif [y,x] == snake[0]: print('🟩', end = '')
                 else: print('🟩', end = '')
             elif [y,x] == [app_y,app_x]: print('🟥', end = '')
             else: print('  ', end = '')
@@ -111,3 +111,4 @@ while True:
     shortest_path(y,x,app_y,app_x)
 print('you lose')
 
+print(snake.length)
